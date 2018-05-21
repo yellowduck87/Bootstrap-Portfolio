@@ -63,6 +63,7 @@ ul {
     float: left!important;
     padding: 10px;
     padding-right: 20px;
+    width: 200px;
 }
 
 p {
@@ -81,4 +82,32 @@ p {
 .container {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+    background-color: teal;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px
+}
+
+.btn-port {
+    padding: 10px;
+    width: 199px;
+    position: absolute;
+    left: 39px;
+    bottom: 30px;
+    border-radius: 0px;
+    background-color: teal;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-style: none;
+}
+
+.img-thumbnail {
+    float: left;
+    border-style: none;
+    margin: 20px;
 }
