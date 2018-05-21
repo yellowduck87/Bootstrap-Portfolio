@@ -2,17 +2,32 @@ body{
     background-image: url(swirl_pattern.png);
 }
 
-#wrapper {
-    max-width: 960px;
+.container-header {
+    width: 100%;
+    background-color: #f8f9fa;
+    height: 98px;
+    z-index: 2;
+    border-bottom: #ccc solid 2px;
     margin: 0 auto;
 }
-.navbar-brand {
-    background-color: teal;
-    padding: 20px;
+
+.navbar {
+    max-width: 960px;
     margin: 0 auto;
+    padding: 0;
+    border-bottom: #ccc solid 2px;
+}
+
+.navbar-brand {
+    background-color: #56B5A1;
+    padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;
-    float: left;
+}
+
+.navbar-brand:hover {
+    background-color: #FFB97A;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 h1 {
@@ -21,25 +36,20 @@ h1 {
 }
 
 h2 {
-    color: teal;
+    color: #56B5A1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    padding-top: 20px
+    padding-top: 20px;
+    padding-left: 20px;
 
 }
-.navbar-light {
-    color: #ffffff;
-    
-}
 
-ul {
-    float: right;
-}
 
-.navbar {
+/* #wrapper {
     border-bottom: #dddddd solid 2px;
     padding: 0;
-}
+    width: 100%;
+} */
 
 .jumbotron {
     background-color: #ffffff;
@@ -67,7 +77,6 @@ ul {
 }
 
 p {
-    /* float: left!important; */
     padding: 10px 10px 0px 10px;
 }
 
@@ -82,32 +91,51 @@ p {
 .container {
     padding-left: 0px;
     padding-right: 0px;
-}
+    margin: auto;
+    margin-bottom: 40px;
+}   
 
 .btn {
     border-radius: 0px;
-    background-color: teal;
+    background-color: #56B5A1;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px
 }
 
+.btn:hover {
+    background-color: #FFB97A;
+}
+
 .btn-port {
     padding: 10px;
-    width: 199px;
+    width: 202px;
     position: absolute;
     left: 39px;
     bottom: 30px;
     border-radius: 0px;
-    background-color: teal;
+    background-color: #56B5A1;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     border-style: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-port:hover {
+    background-color: #FFB97A;
+    color: #777777;
 }
 
 .img-thumbnail {
     float: left;
     border-style: none;
     margin: 20px;
+    width: 210px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: auto;
+    }
 }
